@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta content="O mais novo e melhor site de empregos do Brasil" keywords="Empregos, Salarios, Busca, Vagas, Trabalho">
+<title>iEmprega - Emprego Certo</title>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+		jobAdd();
+	}
+		);
+</script>
+<header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Candidatos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresas.html">Empresas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">TiEmprega</h3>
+</header>
+
+	<main>
+		<div id="display" class="jumbotron">
+		  <h1 class="display-3">TiEmprega</h1>
+		  <p class="lead">Esse é o mais novo portal de empregos do Senac. O portal iEmprega foi criado para ampliar as possibilidades de comunicação de vagas de empregos para os alunos dos cursos técnicos do Senac.</p>
+          <p>
+          	<a class="btn btn-lg btn-success" href="#" role="button">Cadastre-se</a>
+          </p>
+     </div>
+     <div class="row">
+     	<div class="col-lg-12 col-sm-12"> </div>
+     </div>
+     <div class="row">
+    <div class="col-lg-12 col-sm-12">
+      <table id="jobTable"
+              class="table table-bordered
+                     table-condensed table-striped">
+        <thead>
+          <tr>
+            <th>Cargo</th>
+            <th>Cadastro</th>
+            <th>Empresa</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div> <!--fecha row -->
+     
+     <div class="row">
+    	<div class="col-lg-12 col-sm-12">
+      		<h2 class="display-4">Cadastro</h2>
+    	</div>
+  	 </div>
+  	 <div class="row">
+    <div class="col-sm-2">&nbsp;
+    </div>
+    <div class="col-sm-8">
+      <div>
+       <!-- <form class="form my-2 my-lg-4"> -->
+              <input id="job_title" class="form-control mr-sm-2" placeholder="Cargo" aria-label="Cargo" type="text">
+              <input id="job_introdate" class="form-control mr-sm-2" placeholder="Cadastro" aria-label="Cadastro" type="text">
+              <input id="job_company" class="form-control mr-sm-2" placeholder="Empresa" aria-label="Empresa" type="text">
+              <button id="updateButton" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="jobUpdate();">Adicionar</button>
+      <!--  </form> -->
+      </div>
+
+    </div>
+  </div>
+	
+	</main>
+
+	<footer class="footer">
+	  <p>© TiEmprega 2017</p>
+	</footer>
+</body>
+</html>

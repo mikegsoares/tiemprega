@@ -1,0 +1,33 @@
+/* CSS Document */
+body{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#job_title {
+     height: 60px;
+     margin-bottom: 20px;
+}
+
+#job_introdate {
+     height: 60px;
+     margin-bottom: 20px;
+}
+
+#job_company {
+     height: 60px;
+     margin-bottom: 20px;
+}
+
+#updateButton {
+     height: 60px;
+     width: 180px;
+}
+
+.bg-blue {background: #007BFF;}
+
+.bg-black {background: #000;}
+
+h3 {backface-visibility:#007BFF; }
+
+#sendMessageButton{margin-bottom: 15px;}

@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilos.css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="O mais novo e melhor site de empregos do Brasil" keywords="Empregos, Salarios, Busca, Vagas, Trabalho">
+<title>iEmprega - Emprego Certo</title>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right ">
+            <li class="nav-item">
+              <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#">Candidatos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Empresas<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">iEmprega</h3>
+      </header>
+
+	<main>
+	
+		<div class="container">
+		 <div class="row">
+			<h1>
+				<ul>
+					<p>
+						<i class="fa fa-address-book-o" aria-hidden="true"></i> Cadastro do Empregador
+					</p>
+				</ul>
+			</h1>		 	
+		 </div>		
+	</div>
+ 	<div class="container">
+		 <div class="row">
+		  <form name="sentMessage" id="contactForm">
+            <div class="control-group form-group">
+			<div class="controls">
+                <label>Nome completo:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor coloque seu nome completo.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Numero de telefone:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor coloque seu número de telefone.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Endereço de email:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor coloque seu Email.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Endereço:</label>
+                <input type="address" class="form-control" id="address" required data-validation-required-message="Por favor coloque seu Endereço.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>CNPJ:</label>
+                <input type="cnpj" class="form-control" id="cnpj" required data-validation-required-message="Por favor coloque seu Cnpj.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Observações:</label>
+                <textarea rows="10" cols="100" class="form-control" id="obs" required data-validation-required-message="Por favor coloque sua observação." maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+  
+            <button class="btn btn-primary" id="sendMessageButton">Cadastrar</button>
+          </form>
+        </div>
+      </div>	 		
+</main>
+
+	<footer class="py-5 bg-blue">
+		<div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2017	All rights reserved by iEmprega.	Privacy Policy <br></p>
+      </div>
+	</footer>
+</body>
+</html>
